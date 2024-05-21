@@ -321,7 +321,7 @@ PictureSelector.create(this)
 ```
 
 
-Set theme，see [documentation](https://github.com/StarForLuck/PictureSelector/wiki/PictureSelector-3.0-%E4%B8%BB%E9%A2%98api%E8%AF%B4%E6%98%8E)
+Set theme，see [documentation](https://github.com/StarForLuck/PictureSelector/wiki/Api-UI%E8%AF%B4%E6%98%8E)
 
 ```sh
 .setSelectorUIStyle();
