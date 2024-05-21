@@ -50,7 +50,7 @@ dependencies {
 }
 ```
 
-Kotlin版本[Demo](https://github.com/StarForLuck/PictureSelector/tree/master)
+Kotlin版本[Demo](https://github.com/StarForLuck/PictureSelector/tree/kotlin)
 
 ```sh
 dependencies {
