@@ -133,7 +133,7 @@ Android 11 使用相机，需要再AndroidManifest.xm 添加如下代码：
 
 
 ## 进阶使用
-想要了解更多功能，请参阅[文档](https://github.com/StarForLuck/PictureSelector/wiki/PictureSelector-3.0-%E5%8A%9F%E8%83%BDapi%E8%AF%B4%E6%98%8E)
+想要了解更多功能，请参阅[文档](https://github.com/StarForLuck/PictureSelector/wiki/Api%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3)
 
 简单用例如下所示:
 
