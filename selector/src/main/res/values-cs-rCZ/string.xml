@@ -47,6 +47,7 @@
     <string name="ps_error">Obrázek je poškozen</string>
     <string name="ps_video_error">Video je poškozené</string>
     <string name="ps_audio_error">Zvuk je poškozený</string>
+    <string name="ps_save_error">Uložení selhalo</string>
     <string name="ps_save_audio_error">Ukládání zvuku se nezdařilo</string>
     <string name="ps_prompt_audio_content">Uložit zvuk do telefonu?</string>
     <string name="ps_confirm">Potvrdit</string>

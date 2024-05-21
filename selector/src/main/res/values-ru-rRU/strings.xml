@@ -13,6 +13,7 @@
     <string name="ps_done_front_num">%1$d/%2$d Ок</string>
     <string name="ps_completed">Выбрано</string>
     <string name="ps_done">Завершить</string>
+    <string name="ps_save_error">Ошибка сохранения</string>
     <string name="ps_please_select">Выберите</string>
     <string name="ps_empty_title">Нет изображений или видео\n</string>
     <string name="ps_empty_audio_title">Нет аудио файлов\n</string>

@@ -35,6 +35,7 @@
     <string name="ps_save_image_error">فشل حفظ الصورة</string>
     <string name="ps_save_video_error">فشل حفظ الفيديو</string>
     <string name="ps_save_audio_error">فشل تحميل الصوت</string>
+    <string name="ps_save_error">فشل حفظ</string>
     <string name="ps_prompt_audio_content">حفظ الصوت إلى الهاتف</string>
     <string name="ps_save_success"> تم حفظ الصورة بنجاح</string>
     <string name="ps_all_audio">كل الصوت</string>

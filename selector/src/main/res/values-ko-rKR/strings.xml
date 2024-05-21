@@ -20,6 +20,7 @@
     <string name="ps_audio_empty">시스템으로 오디오 녹음을 할 수 있습니다.</string>
     <string name="ps_min_img_num">이미지를 최소한 %1$s 개 이상 선택해야 합니다.</string>
     <string name="ps_min_audio_num">음성파일을 최소한 %1$s 개 이상 선택해야 합니다.</string>
+    <string name="ps_save_error">저장 실패</string>
     <string name="ps_gif_tag">gif</string>
     <string name="ps_webp_tag">webp</string>
     <string name="ps_jurisdiction">메모리 카드 읽기 권한이 거부됨</string>

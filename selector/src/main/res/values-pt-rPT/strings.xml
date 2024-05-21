@@ -15,6 +15,7 @@
     <string name="ps_completed">Terminar</string>
     <string name="ps_done">Terminar</string>
     <string name="ps_please_select">Escolha</string>
+    <string name="ps_save_error">A gravação falhou</string>
     <string name="ps_empty_title">Não há arquivos de vídeo ou imagem\n</string>
     <string name="ps_empty_audio_title">Não há ficheiros de áudio\n</string>
     <string name="ps_empty">Você pode usar a câmera para tirar fotos ou vídeos</string>

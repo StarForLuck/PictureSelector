@@ -73,16 +73,17 @@ public class PhotoItemSelectedDialog extends DialogFragment implements View.OnCl
         if (dialog != null) {
             Window window = dialog.getWindow();
             if (window != null) {
-                window.setLayout(DensityUtil.getRealScreenWidth(getContext()), RelativeLayout.LayoutParams.WRAP_CONTENT);
+                int realScreenWidth = DensityUtil.INSTANCE.getRealScreenWidth(requireContext());
+                window.setLayout(realScreenWidth, RelativeLayout.LayoutParams.WRAP_CONTENT);
                 window.setGravity(Gravity.BOTTOM);
                 window.setWindowAnimations(R.style.PictureThemeDialogFragmentAnim);
             }
         }
     }
 
-    private OnItemClickListener onItemClickListener;
+    private OnItemClickListener<View> onItemClickListener;
 
-    public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
+    public void setOnItemClickListener(OnItemClickListener<View> onItemClickListener) {
         this.onItemClickListener = onItemClickListener;
     }
 
@@ -101,10 +102,10 @@ public class PhotoItemSelectedDialog extends DialogFragment implements View.OnCl
         int id = v.getId();
         if (onItemClickListener != null) {
             if (id == R.id.ps_tv_photo) {
-                onItemClickListener.onItemClick(v, IMAGE_CAMERA);
+                onItemClickListener.onItemClick(IMAGE_CAMERA, v);
                 isCancel = false;
             } else if (id == R.id.ps_tv_video) {
-                onItemClickListener.onItemClick(v, VIDEO_CAMERA);
+                onItemClickListener.onItemClick(VIDEO_CAMERA, v);
                 isCancel = false;
             }
         }

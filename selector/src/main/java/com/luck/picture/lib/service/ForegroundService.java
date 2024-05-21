@@ -14,9 +14,9 @@ import androidx.core.app.NotificationCompat;
 
 import com.luck.picture.lib.BuildConfig;
 import com.luck.picture.lib.R;
+import com.luck.picture.lib.config.MediaType;
 import com.luck.picture.lib.config.SelectorConfig;
-import com.luck.picture.lib.config.SelectMimeType;
-import com.luck.picture.lib.config.SelectorProviders;
+import com.luck.picture.lib.provider.SelectorProviders;
 import com.luck.picture.lib.utils.SdkVersionUtils;
 
 /**
@@ -62,10 +62,10 @@ public class ForegroundService extends Service {
      */
     private Notification createForegroundNotification() {
         int importance = 0;
-        if (SdkVersionUtils.isMaxN()) {
+        if (SdkVersionUtils.INSTANCE.isMaxN()) {
             importance = NotificationManager.IMPORTANCE_HIGH;
         }
-        if (SdkVersionUtils.isO()) {
+        if (SdkVersionUtils.INSTANCE.isO()) {
             NotificationChannel channel = new NotificationChannel(CHANNEL_ID, CHANNEL_NAME, importance);
             channel.setLightColor(Color.BLUE);
             channel.canBypassDnd();
@@ -74,8 +74,9 @@ public class ForegroundService extends Service {
             NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
             notificationManager.createNotificationChannel(channel);
         }
-        SelectorConfig config = SelectorProviders.getInstance().getSelectorConfig();
-        String contentText = config.chooseMode == SelectMimeType.ofAudio()
+        SelectorConfig config = SelectorProviders.Companion.getInstance().getConfig();
+
+        String contentText = config.getMediaType() == MediaType.AUDIO
                 ? getString(R.string.ps_use_sound) : getString(R.string.ps_use_camera);
         return new NotificationCompat.Builder(this, CHANNEL_ID)
                 .setSmallIcon(R.drawable.ps_ic_trans_1px)
@@ -100,11 +101,11 @@ public class ForegroundService extends Service {
      *
      * @param context
      */
-    public static void startForegroundService(Context context, boolean isCameraForegroundService) {
+    public static void startService(Context context, boolean isCameraForegroundService) {
         try {
             if (!isForegroundServiceIng && isCameraForegroundService) {
                 Intent intent = new Intent(context, ForegroundService.class);
-                if (SdkVersionUtils.isO()) {
+                if (SdkVersionUtils.INSTANCE.isO()) {
                     context.startForegroundService(intent);
                 } else {
                     context.startService(intent);

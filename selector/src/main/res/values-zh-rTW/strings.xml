@@ -39,6 +39,7 @@
     <string name="ps_save_audio_error">錄音保存失敗</string>
     <string name="ps_save_success">檔案保存成功至</string>
     <string name="ps_all_audio">所有錄音</string>
+    <string name="ps_save_error">保存失敗</string>
     <string name="ps_tape">錄音</string>
     <string name="ps_play_audio">播放</string>
     <string name="ps_stop_audio">停止</string>

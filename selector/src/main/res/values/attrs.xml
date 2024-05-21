@@ -1,21 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?><!--
-Copyright 2014 David Morrissey
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
--->
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <declare-styleable name="PictureLongScaleImageView">
+    <declare-styleable name="SelectorLongScaleImageView">
         <attr name="src" format="reference" />
         <attr name="assetName" format="string" />
         <attr name="panEnabled" format="boolean" />
@@ -24,14 +10,30 @@ limitations under the License.
         <attr name="tileBackgroundColor" format="color" />
     </declare-styleable>
 
-    <declare-styleable name="PictureMediumBoldTextView">
+    <declare-styleable name="SelectorMediumBoldTextView">
         <attr name="stroke_Width" format="float" />
     </declare-styleable>
 
-    <declare-styleable name="PictureRoundCornerRelativeLayout">
+    <declare-styleable name="SelectorRoundCornerRelativeLayout">
         <attr name="psCorners" format="dimension" />
         <attr name="psTopNormal" format="boolean" />
         <attr name="psBottomNormal" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SelectorStyleTextView">
+        <attr name="psNormalTextColor" format="color" />
+        <attr name="psSelectedTextColor" format="color" />
+
+        <attr name="psNormalTextSize" format="dimension" />
+        <attr name="psSelectedTextSize" format="dimension" />
+
+        <attr name="psNormalText" format="string" localization="suggested" />
+        <attr name="psSelectedText" format="string" localization="suggested" />
+
+        <attr name="psNormalBackground" format="reference|color" />
+        <attr name="psSelectedBackground" format="reference|color" />
+
+        <attr name="psNumMode" format="boolean" />
     </declare-styleable>
 
 </resources>

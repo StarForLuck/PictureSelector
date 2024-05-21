@@ -23,7 +23,7 @@
     <string name="ps_min_audio_num">Минималды аудио таңдау %1$s-дан аз болмауы тиіс</string>
     <string name="ps_gif_tag">gif</string>
     <string name="ps_webp_tag">webp</string>
-
+    <string name="ps_save_error">Save failed</string>
     <string name="ps_audio">Системалық жазбауларға кіру рұқсаты берілмеген</string>
     <string name="ps_jurisdiction">Жады картаға кіру рұқсаты берілмеген</string>
     <string name="ps_camera">Системалық камераға кіру рұқсаты берілмеген</string>

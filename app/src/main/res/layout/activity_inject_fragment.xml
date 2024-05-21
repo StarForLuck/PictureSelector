@@ -1,50 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/app_color_white">
+    android:orientation="vertical">
 
-
-    <com.luck.picture.lib.widget.MediumBoldTextView
-        android:id="@+id/tvb_inject_fragment"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:gravity="center"
-        android:padding="15dp"
-        android:text="Click on the screen use PictureSelector Callback"
-        android:textColor="@color/ps_color_bd"
-        android:textSize="14sp" />
+        android:orientation="horizontal">
 
-    <com.luck.picture.lib.widget.MediumBoldTextView
-        android:id="@+id/tvb_inject_result_fragment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tvb_inject_fragment"
-        android:layout_centerHorizontal="true"
-        android:gravity="center"
-        android:padding="15dp"
-        android:text="Click on the screen use PictureSelector SelectorResult"
-        android:textColor="@color/ps_color_bd"
-        android:textSize="14sp" />
+        <Button
+            android:id="@+id/btn_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="相机"
+            android:textColor="@color/app_color_53575e"
+            android:textSize="14sp" />
 
+        <Button
+            android:id="@+id/btn_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图库"
+            android:textColor="@color/app_color_53575e"
+            android:textSize="14sp" />
+    </LinearLayout>
 
     <com.luck.picture.lib.widget.MediumBoldTextView
         android:id="@+id/tv_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tvb_inject_result_fragment"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:lineSpacingExtra="2dp"
-        android:textColor="@color/ps_color_bd"
-        android:textSize="14sp" />
+        android:textColor="@color/app_color_red"
+        android:textSize="14sp"
+        tools:text="~~~~~~~~~~~~~~~~~~" />
 
     <FrameLayout
-        android:id="@+id/fragment_container"
+        android:id="@+id/container_fragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-
-</RelativeLayout>
+</LinearLayout>

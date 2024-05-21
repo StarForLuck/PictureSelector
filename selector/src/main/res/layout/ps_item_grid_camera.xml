@@ -7,7 +7,7 @@
     android:orientation="vertical">
 
     <com.luck.picture.lib.widget.MediumBoldTextView
-        android:id="@+id/tvCamera"
+        android:id="@+id/tv_camera"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"

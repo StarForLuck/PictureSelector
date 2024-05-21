@@ -35,6 +35,7 @@
     <string name="ps_prompt_video_content">Conserver ou non une video sur un téléphone portable？</string>
     <string name="ps_save_image_error">Défaut de conservation des images</string>
     <string name="ps_save_video_error">Défaut de conservation des videos</string>
+    <string name="ps_save_error">Le téléchargement a échoué</string>
     <string name="ps_save_success">conservée avec succès</string>
     <string name="ps_all_audio">Tous audio</string>
     <string name="ps_tape">Les transcriptions in extenso</string>

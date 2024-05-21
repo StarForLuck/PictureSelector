@@ -7,7 +7,6 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.provider.Settings;
-import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Size;
@@ -23,6 +22,7 @@ import com.luck.picture.lib.utils.SpUtils;
  * @describe：PermissionUtil
  */
 public class PermissionUtil {
+
     /**
      * 默认未请求授权状态
      */
@@ -39,7 +39,6 @@ public class PermissionUtil {
      * 申请权限拒绝，并且是永久，不会再弹窗
      */
     public static final int REFUSE_PERMANENT = 3;
-
     /**
      * Activity Action: Show screen for controlling which apps have access to manage external
      * storage.
@@ -78,30 +77,17 @@ public class PermissionUtil {
         if (flag == PackageManager.PERMISSION_GRANTED) {
             return SUCCESS;
         }
-        if (!SpUtils.contains(activity, permission)) {
+        if (!SpUtils.INSTANCE.contains(activity, permission)) {
             return DEFAULT;
         }
         return REFUSE_PERMANENT;
     }
 
-    public static boolean isAllGranted(Context context, String[] permissions, int[] grantResults) {
+    public static boolean isAllGranted(int[] grantResults) {
         boolean isAllGranted = true;
-        boolean skipPermissionReject = false;
-        int targetSdkVersion = context.getApplicationInfo().targetSdkVersion;
-        if (targetSdkVersion >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
-            if (ContextCompat.checkSelfPermission(context, PermissionConfig.READ_MEDIA_VISUAL_USER_SELECTED) == PackageManager.PERMISSION_GRANTED) {
-                skipPermissionReject = true;
-            }
-        }
         if (grantResults.length > 0) {
-            for (int i = 0; i < grantResults.length; i++) {
-                if (grantResults[i] != PackageManager.PERMISSION_GRANTED) {
-                    if (skipPermissionReject) {
-                        if (permissions[i].equals(PermissionConfig.READ_MEDIA_IMAGES) ||
-                                permissions[i].equals(PermissionConfig.READ_MEDIA_VIDEO)) {
-                            break;
-                        }
-                    }
+            for (int grant : grantResults) {
+                if (grant != PackageManager.PERMISSION_GRANTED) {
                     isAllGranted = false;
                     break;
                 }

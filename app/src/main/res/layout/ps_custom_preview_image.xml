@@ -4,14 +4,13 @@
     android:layout_height="match_parent">
 
     <com.luck.picture.lib.photoview.PhotoView
-        android:id="@+id/preview_image"
+        android:id="@+id/iv_preview_cover"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
     <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
-        android:id="@+id/big_preview_image"
+        android:id="@+id/preview_long_image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="invisible" />
-
+        android:visibility="gone" />
 </FrameLayout>

@@ -37,6 +37,7 @@
     <string name="ps_save_video_error">视频保存失败</string>
     <string name="ps_save_audio_error">音频保存失败</string>
     <string name="ps_save_success">文件保存成功至</string>
+    <string name="ps_save_error">保存失败</string>
     <string name="ps_all_audio">所有音频</string>
     <string name="ps_tape">录音</string>
     <string name="ps_play_audio">播放</string>

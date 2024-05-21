@@ -38,4 +38,13 @@
         android:background="@color/app_color_9b"
         android:padding="3dp"
         android:src="@drawable/ic_plus" />
+
+    <CheckBox
+        android:id="@+id/check_merge_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="合并至总数内"
+        android:textColor="@color/ps_color_black"
+        android:textSize="14sp" />
+
 </LinearLayout>
