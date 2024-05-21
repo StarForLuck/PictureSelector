@@ -35,7 +35,7 @@ repositories {
 
 dependencies {
   // PictureSelector basic (Necessary)
-  implementation 'io.github.lucksiege:pictureselector:v3.11.3'
+  implementation 'io.github.lucksiege:pictureselector:kotlin-v1.0.0-beta'
 
   // image compress library (Not necessary)
   implementation 'io.github.lucksiege:compress:v3.11.3'
