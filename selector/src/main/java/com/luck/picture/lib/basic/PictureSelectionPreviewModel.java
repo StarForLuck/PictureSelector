@@ -56,7 +56,7 @@ public final class PictureSelectionPreviewModel {
      *
      * @param engine Image Load the engine
      *               <p>
-     *               <a href="https://github.com/LuckSiege/PictureSelector/blob/version_component/app/src/main/java/com/luck/pictureselector/GlideEngine.java">
+     *               <a href="https://github.com/StarForLuck/PictureSelector/blob/version_component/app/src/main/java/com/luck/pictureselector/GlideEngine.java">
      *               </p>
      */
     public PictureSelectionPreviewModel setImageEngine(ImageEngine engine) {
