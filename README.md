@@ -48,7 +48,7 @@ dependencies {
 }
 ```
 
-Kotlin Version [Demo](https://github.com/StarForLuck/PictureSelector/tree/master)
+Kotlin Version [Demo](https://github.com/StarForLuck/PictureSelector/tree/kotlin)
 
 ```sh
 dependencies {
