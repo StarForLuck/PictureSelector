@@ -3,7 +3,7 @@
     
    [English🇺🇸](README.md)
 
-   [效果体验](https://github.com/StarForLuck/PictureSelector/raw/version_component/app/demo/demo_2024-05-21_025734_v3.11.3.apk)<br>
+   [效果体验](https://github.com/StarForLuck/PictureSelector/raw/master/app/demo/demo_2024-05-21_025734_v3.11.3.apk)<br>
 
 [![Maven Central](https://img.shields.io/badge/maven%20central-v3.11.3-yellow)](https://github.com/LuckSiege)
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg)](https://github.com/LuckSiege)
@@ -483,7 +483,7 @@ QQ [893855882]() <br>
 ## 兼容性测试
 ******腾讯优测-深度测试-通过率达到100%******
 
-![image](https://github.com/StarForLuck/PictureSelector/blob/version_component/image/test.png)
+![image](https://github.com/StarForLuck/PictureSelector/blob/master/image/test.png)
 
 
 ## 演示效果
