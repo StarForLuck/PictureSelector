@@ -130,7 +130,7 @@ Android 11 use camera，AndroidManifest.xm add the code：
 [CoilEngine](https://github.com/StarForLuck/PictureSelector/blob/master/app/src/main/java/com/luck/pictureselector/CoilEngine.java)<br>
 
 ## Usage
-For more features, see [documentation](https://github.com/StarForLuck/PictureSelector/wiki/PictureSelector-3.0-%E5%8A%9F%E8%83%BDapi%E8%AF%B4%E6%98%8E)
+For more features, see [documentation](https://github.com/StarForLuck/PictureSelector/wiki/Api%E8%AF%B4%E6%98%8E%E6%96%87%E6%A1%A3)
 
 A simple use case is shown below:
 
