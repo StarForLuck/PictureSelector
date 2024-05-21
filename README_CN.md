@@ -11,7 +11,7 @@
 
 
 ## 目录
--[最新版本](https://github.com/StarForLuck/PictureSelector/releases/tag/v3.11.3)<br>
+-[最新版本](https://github.com/StarForLuck/PictureSelector/releases/tag/kotlin-v1.0.0-beta)<br>
 -[如何引用](#如何引用)<br>
 -[进阶使用](#进阶使用)<br>
 -[权限](#权限)<br>

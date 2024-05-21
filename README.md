@@ -11,7 +11,7 @@
 
 
 ## Contents
--[Latest version](https://github.com/StarForLuck/PictureSelector/releases/tag/v3.11.3)<br>
+-[Latest version](https://github.com/StarForLuck/PictureSelector/releases/tag/kotlin-v1.0.0-beta)<br>
 -[Download](#Download)<br>
 -[Usage](#Usage)<br>
 -[Permission](#Permission)<br>
