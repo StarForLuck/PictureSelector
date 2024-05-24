@@ -219,9 +219,6 @@ abstract class BaseSelectorFragment : Fragment() {
      */
     open fun handlePermissionDenied(permission: Array<String>) {
         TempDataProvider.getInstance().currentRequestPermission = permission
-        if (permission.isNotEmpty()) {
-            SpUtils.putBoolean(requireContext(), permission[0], true)
-        }
         val onPermissionDeniedListener = config.mListenerInfo.onPermissionDeniedListener
         if (onPermissionDeniedListener != null) {
             showPermissionDescription(false, permission)
@@ -232,7 +229,7 @@ abstract class BaseSelectorFragment : Fragment() {
                 object : OnCallbackListener<Boolean> {
                     override fun onCall(data: Boolean) {
                         if (data) {
-                            handlePermissionSettingResult(TempDataProvider.getInstance().currentRequestPermission)
+                            handlePermissionSettingResult(permission)
                         }
                     }
                 })
