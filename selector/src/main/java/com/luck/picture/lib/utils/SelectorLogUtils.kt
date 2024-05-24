@@ -8,7 +8,7 @@ import android.util.Log
  * @describe：PictureSelector Log Utils
  */
 object SelectorLogUtils {
-    private const val TAG = "YYDS"
+    private const val TAG = "PictureSelector"
     fun info(info: String) {
         Log.i(TAG, info)
     }

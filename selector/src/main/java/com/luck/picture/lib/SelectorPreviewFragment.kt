@@ -398,7 +398,7 @@ open class SelectorPreviewFragment : BaseSelectorFragment() {
             mMagicalView?.changeRealScreenHeight(width, height, false)
             val viewParams =
                 RecycleItemViewParams.getItemViewParams(if (getPreviewWrap().isDisplayCamera) viewPager.currentItem + 1 else viewPager.currentItem)
-            if (viewParams == null || width == 0 && height == 0) {
+            if (viewParams == null || (width == 0 && height == 0)) {
                 mMagicalView?.startNormal(width, height, false)
                 mMagicalView?.setBackgroundAlpha(1F)
                 navBarViews.forEach {
